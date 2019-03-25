@@ -15,68 +15,70 @@ import SwiftyJSON
 @testable import MoacAPI
 
 class Tests: XCTestCase {
+    // Moac API operation instance
     let op: MoacAPIOperation = MoacAPIOperation()
-    
+    // Account name to get token
     let account = "test"
+    // Account password to get token
     let pwd: String = "123456"
-    
+    // Token for accessing API
     var token: String = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoidGVzdCIsInB3ZCI6IjEyMzQ1NiIsImlhdCI6MTU1MzIyMzg5NSwiZXhwIjoxNTUzMjMxMDk1fQ.C6gPF42Zn-OkoJeJ4Og0dV44OkkesVEbb9lXJdCpt6M"
-
+    // Password used for account registration
     let registerPwd = "1111"
-    
+    // Account registered with API account registration
+    // Most are received via 139.198.126.104:8080/api/account/v1.0/register
+    // Account address
     let loginAddr = "0xA1763BFf29722A20CF15CAf61f5B21D74cD90EeF"
+    // Account password
     let loginAddrPwd = "1111"
+    // Account encode
     let loginAddrEncode = "o1+sCMmto2Ij5hWEnExyZ/mi72CClmrNUoGGKg2oNhmjbZiiW+5C82PZTSJfOwGkucoz7xyyaPoAx82zfHH4NCPZ1/b7Tz4DMOgOFYSXl/k="
+    // Account keystore
     let loginAddrKeyStore = """
 {"version":3,"id":"db018af3-2ffc-4e89-b502-b804659c0287","address":"a1763bff29722a20cf15caf61f5b21d74cd90eef","crypto":{"ciphertext":"2d7e7f88ff9ac44f736c54ddc8cb4d33801092bee897e5ffa53a25d61a6eff0d","cipherparams":{"iv":"8835f75616e61ec86b8d1929a70bfdb9"},"cipher":"aes-128-ctr","kdf":"scrypt","kdfparams":{"dklen":32,"salt":"831f1f881d26a1dc2f5395748c77c22c3def65a18655b6e2d096aed4ccfe9696","n":8192,"r":8,"p":1},"mac":"d51cb4b0394d07112f434d96798a60fcf5f8538123bb4feadd541be4f58c2fc1"}}
 """
+    // Account private key
     let loginAddrPrivateKey = "0xc3547fe3a8eaa8b18fee0d7e01e92f633826af44c962b92f99eb70800e641646"
-    
+    // Public IP address for vnode and scsserver
     let myIP = "135.23.110.72"
+    // Public IP port for vnode
     let myPort = "808"
+    // Public IP port for scsserver monitor with "--rpcdebug" on
     let monitorPort = "809"
-    
+    // A testnet address on the vnode
     let testnetAddrOnMine = "0x63ad5cc2c80142a39911ed94a8676b8ab24c2fa9"
+    // A testnet address on the vnode used to send all transactions
     let txSender = "0xf0e014cbf1185709fd0a0f8e5e8b13d6610efab9"
-    
+    // A valid testnet transaction hash
     let anyTxHash = "0x75da38c1bbfe92bc416cfd0e8e2a5a292f3c4db38a3a2bef189281056ff2a95e"
-    
+    // A deployed contract on testnet
     let simpleContractAddr = "0x08df09DD3163BC60C8F154540440220aCb0c035b"
     let simpleContractGetFuncName = "get()"
     let simpleContractSetFuncName = "set(uint)"
     let simpleContractSetParamType0 = "uint"
     let simpleContractSetParamValue0 = "7"
-    
+    // ERC20 contract address used to deploy microchain
     let erc20ContractAddr = "0x47a17b6611f600f9ca4497fa5c1126119b25005e"
-    
+    // Microchain address
     let microchainAddr = "0xc8af1419cc7940842608edd5585385030888c310"
-    
+    // Three scsids for three scsservers for microchain
     let scsAddr0 = "0xb5452a70baad8ab877503411cd9ffcf6d467205f"
     let scsAddr1 = "0x2cb0894288ba117fda59906adbbd06514cdfb883"
     let scsAddr2 = "0x41721724686c3b3668c29def8956ad389a1e10be"
-    
+    // Transaction hash of dappBase contract deployment
     let dappBaseTxHash = "0x2c9666f2751c3784ab1eeffb839970704620fd4957be436205843ec724ce3809"
-    let dappTxHash1 = "0xe66f30d4a2c659d2b332d65e37644c12592a5f87fa09ac4fb65bb9ff3eb62cee"
-    let dappTxHash2 = "0x72a379dd4653b1340791f0791a5358e67aa9468a1f8d56c73a4d0544c46c60e4"
-    
+    // DappBase contract address
     let dappBaseAddr = "0xb79cd88738420ee4dc6fb7a6facc82abcae05cb1"
-    
+    // DappBase contract getter method
+    let dappGetter = "[\"getDappList\"]"
+    // Dapp1 contract address
     let dapp1Addr = "0xdfd7f1c2defe4f4af3f964abb16b531079308fc4238894149ab3f62d838ab505"
+    // Dapp1 contract setter function
     let dapp1SetterName = "addTup(uint,address)"
     let dapp1SetterParamType0 = "uint"
     let dapp1SetterParamType1 = "address"
     let dapp1SetterParamValue0 = "19"
     let dapp1SetterParamValue1 = "0x123123122123"
-    
-    let dapp0SetFuncName = "set(uint)"
-    let dapp0SetParamType0 = "uint"
-    let dapp0SetParamValue0 = "7"
-    let dapp0GetFuncName = "get(uint)"
-    let dapp0GetParamType0 = "uint"
-    let dapp0GetParamValue0 = "7"
-    let dappAddr1 = "0xb79cd88738420ee4dc6fb7a6facc82abcae05cb1"
-    let dappGetter = "[\"getDappList\"]"
-    
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
