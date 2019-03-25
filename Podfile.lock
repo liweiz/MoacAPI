@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (4.8.1)
+  - BigInt (3.1.0):
+    - SipHash (~> 1.2)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - PromiseKit (6.8.2):
+    - PromiseKit/CorePromise (= 6.8.2)
+    - PromiseKit/Foundation (= 6.8.2)
+    - PromiseKit/UIKit (= 6.8.2)
+  - PromiseKit/CorePromise (6.8.2)
+  - PromiseKit/Foundation (6.8.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.2):
+    - PromiseKit/CorePromise
+  - Result (4.1.0)
+  - SipHash (1.2.2)
+  - SwiftLint (0.30.1)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - BigInt (~> 3.1.0)
+  - Moya (~> 12.0.1)
+  - PromiseKit (~> 6.8.2)
+  - SwiftLint (= 0.30.1)
+  - SwiftyJSON (~> 4.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - BigInt
+    - Moya
+    - PromiseKit
+    - Result
+    - SipHash
+    - SwiftLint
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  PromiseKit: 8200c4555a5b433ac26f5143093cb792ee2c3426
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
+  SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 2abf54c7c7f95d8e61d50d8bcab1fa68f4d1fca3
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06738C4B48E1A4998758988A /* Pods_MoacAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5534FDCC588C4019A103448E /* Pods_MoacAPI.framework */; };
+		6F50C03DC79327E31357BDBE /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3495D8B752E291CD2B5F617 /* Pods_Tests.framework */; };
+		EE0066C32224C4ED0011CEED /* MoacAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066C22224C4ED0011CEED /* MoacAPI.swift */; };
+		EE0066CA2224F51C0011CEED /* MoacAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066C92224F51C0011CEED /* MoacAPIProvider.swift */; };
+		EE0066CD2224FDD10011CEED /* ERC20Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066CC2224FDD10011CEED /* ERC20Contract.swift */; };
+		EE0066CF2225D4AC0011CEED /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066CE2225D4AC0011CEED /* Balance.swift */; };
+		EE0066D12225D6450011CEED /* MoacNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066D02225D6450011CEED /* MoacNumberFormatter.swift */; };
+		EE0066D52226556D0011CEED /* MoacUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066D42226556D0011CEED /* MoacUnit.swift */; };
+		EE0066DD222666A10011CEED /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066DC222666A10011CEED /* Tests.swift */; };
+		EE0066DF222666A10011CEED /* libMoacAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0066BF2224C4ED0011CEED /* libMoacAPI.a */; };
+		EE0066E6222667D10011CEED /* MoacAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066C22224C4ED0011CEED /* MoacAPI.swift */; };
+		EE0066E7222667E80011CEED /* MoacAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066C92224F51C0011CEED /* MoacAPIProvider.swift */; };
+		EE0066E8222667EC0011CEED /* MoacNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066D02225D6450011CEED /* MoacNumberFormatter.swift */; };
+		EE0066E9222667F00011CEED /* MoacUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0066D42226556D0011CEED /* MoacUnit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE0066E0222666A10011CEED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE0066B72224C4ED0011CEED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE0066BE2224C4ED0011CEED;
+			remoteInfo = MoacAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE0066BD2224C4ED0011CEED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		028E9D7A037A0BA41A7C1E0B /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4B1C6AFB70C53D0A0548E63F /* Pods-MoacAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoacAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoacAPI/Pods-MoacAPI.release.xcconfig"; sourceTree = "<group>"; };
+		5534FDCC588C4019A103448E /* Pods_MoacAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoacAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B277B03BF2DC4CAB4181D069 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D175E16936C171943D3C0C70 /* Pods-MoacAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoacAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoacAPI/Pods-MoacAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		EE0066BF2224C4ED0011CEED /* libMoacAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoacAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0066C22224C4ED0011CEED /* MoacAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoacAPI.swift; sourceTree = "<group>"; };
+		EE0066C92224F51C0011CEED /* MoacAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoacAPIProvider.swift; sourceTree = "<group>"; };
+		EE0066CC2224FDD10011CEED /* ERC20Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERC20Contract.swift; sourceTree = "<group>"; };
+		EE0066CE2225D4AC0011CEED /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		EE0066D02225D6450011CEED /* MoacNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoacNumberFormatter.swift; sourceTree = "<group>"; };
+		EE0066D42226556D0011CEED /* MoacUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoacUnit.swift; sourceTree = "<group>"; };
+		EE0066DA222666A10011CEED /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0066DC222666A10011CEED /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		EE0066DE222666A10011CEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3495D8B752E291CD2B5F617 /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE0066BC2224C4ED0011CEED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06738C4B48E1A4998758988A /* Pods_MoacAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0066D7222666A10011CEED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0066DF222666A10011CEED /* libMoacAPI.a in Frameworks */,
+				6F50C03DC79327E31357BDBE /* Pods_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7383052932698A3A75EBDC57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5534FDCC588C4019A103448E /* Pods_MoacAPI.framework */,
+				F3495D8B752E291CD2B5F617 /* Pods_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75C1D34A97763BA8605D42A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D175E16936C171943D3C0C70 /* Pods-MoacAPI.debug.xcconfig */,
+				4B1C6AFB70C53D0A0548E63F /* Pods-MoacAPI.release.xcconfig */,
+				B277B03BF2DC4CAB4181D069 /* Pods-Tests.debug.xcconfig */,
+				028E9D7A037A0BA41A7C1E0B /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE0066B62224C4ED0011CEED = {
+			isa = PBXGroup;
+			children = (
+				EE0066C12224C4ED0011CEED /* MoacAPI */,
+				EE0066DB222666A10011CEED /* Tests */,
+				EE0066C02224C4ED0011CEED /* Products */,
+				75C1D34A97763BA8605D42A9 /* Pods */,
+				7383052932698A3A75EBDC57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE0066C02224C4ED0011CEED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE0066BF2224C4ED0011CEED /* libMoacAPI.a */,
+				EE0066DA222666A10011CEED /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE0066C12224C4ED0011CEED /* MoacAPI */ = {
+			isa = PBXGroup;
+			children = (
+				EE0066CB2224FDA40011CEED /* Models */,
+				EE0066C22224C4ED0011CEED /* MoacAPI.swift */,
+				EE0066C92224F51C0011CEED /* MoacAPIProvider.swift */,
+				EE0066D02225D6450011CEED /* MoacNumberFormatter.swift */,
+				EE0066D42226556D0011CEED /* MoacUnit.swift */,
+			);
+			path = MoacAPI;
+			sourceTree = "<group>";
+		};
+		EE0066CB2224FDA40011CEED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE0066CC2224FDD10011CEED /* ERC20Contract.swift */,
+				EE0066CE2225D4AC0011CEED /* Balance.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE0066DB222666A10011CEED /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EE0066DC222666A10011CEED /* Tests.swift */,
+				EE0066DE222666A10011CEED /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE0066BE2224C4ED0011CEED /* MoacAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0066C62224C4ED0011CEED /* Build configuration list for PBXNativeTarget "MoacAPI" */;
+			buildPhases = (
+				0B86AEAB49B80FAC03F7653E /* [CP] Check Pods Manifest.lock */,
+				EE0066BB2224C4ED0011CEED /* Sources */,
+				EE0066BC2224C4ED0011CEED /* Frameworks */,
+				EE0066BD2224C4ED0011CEED /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoacAPI;
+			productName = MoacAPI;
+			productReference = EE0066BF2224C4ED0011CEED /* libMoacAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EE0066D9222666A10011CEED /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0066E4222666A10011CEED /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				2C66080A3B29381BA4CA2374 /* [CP] Check Pods Manifest.lock */,
+				EE0066D6222666A10011CEED /* Sources */,
+				EE0066D7222666A10011CEED /* Frameworks */,
+				EE0066D8222666A10011CEED /* Resources */,
+				00CB4D2D9D27BB82754A1593 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE0066E1222666A10011CEED /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = EE0066DA222666A10011CEED /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE0066B72224C4ED0011CEED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Liwei Zhang";
+				TargetAttributes = {
+					EE0066BE2224C4ED0011CEED = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EE0066D9222666A10011CEED = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = EE0066BA2224C4ED0011CEED /* Build configuration list for PBXProject "MoacAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE0066B62224C4ED0011CEED;
+			productRefGroup = EE0066C02224C4ED0011CEED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE0066BE2224C4ED0011CEED /* MoacAPI */,
+				EE0066D9222666A10011CEED /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE0066D8222666A10011CEED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00CB4D2D9D27BB82754A1593 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B86AEAB49B80FAC03F7653E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoacAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C66080A3B29381BA4CA2374 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE0066BB2224C4ED0011CEED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0066D12225D6450011CEED /* MoacNumberFormatter.swift in Sources */,
+				EE0066C32224C4ED0011CEED /* MoacAPI.swift in Sources */,
+				EE0066CA2224F51C0011CEED /* MoacAPIProvider.swift in Sources */,
+				EE0066D52226556D0011CEED /* MoacUnit.swift in Sources */,
+				EE0066CF2225D4AC0011CEED /* Balance.swift in Sources */,
+				EE0066CD2224FDD10011CEED /* ERC20Contract.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0066D6222666A10011CEED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0066E7222667E80011CEED /* MoacAPIProvider.swift in Sources */,
+				EE0066E9222667F00011CEED /* MoacUnit.swift in Sources */,
+				EE0066E8222667EC0011CEED /* MoacNumberFormatter.swift in Sources */,
+				EE0066E6222667D10011CEED /* MoacAPI.swift in Sources */,
+				EE0066DD222666A10011CEED /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE0066E1222666A10011CEED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE0066BE2224C4ED0011CEED /* MoacAPI */;
+			targetProxy = EE0066E0222666A10011CEED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE0066C42224C4ED0011CEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE0066C52224C4ED0011CEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE0066C72224C4ED0011CEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D175E16936C171943D3C0C70 /* Pods-MoacAPI.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE0066C82224C4ED0011CEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B1C6AFB70C53D0A0548E63F /* Pods-MoacAPI.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE0066E2222666A10011CEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B277B03BF2DC4CAB4181D069 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liwei.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE0066E3222666A10011CEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 028E9D7A037A0BA41A7C1E0B /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liwei.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE0066BA2224C4ED0011CEED /* Build configuration list for PBXProject "MoacAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0066C42224C4ED0011CEED /* Debug */,
+				EE0066C52224C4ED0011CEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0066C62224C4ED0011CEED /* Build configuration list for PBXNativeTarget "MoacAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0066C72224C4ED0011CEED /* Debug */,
+				EE0066C82224C4ED0011CEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0066E4222666A10011CEED /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0066E2222666A10011CEED /* Debug */,
+				EE0066E3222666A10011CEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE0066B72224C4ED0011CEED /* Project object */;
+}
