@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.swift_version = '4.0'
 
   s.source       = { git: 'https://github.com/liweiz/MoacAPI.git' }
-  s.source_files = '**/*.swift'
+  s.source_files = 'MoacAPI/**/*.swift'
 
   s.dependency 'BigInt', '~> 3.1.0'
   s.dependency 'Moya', '~> 12.0.1'
